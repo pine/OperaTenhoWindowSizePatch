@@ -1,0 +1,22 @@
+{
+  "name": "天鳳ウィンドウサイズ 修正パッチ for Opera",
+  "description": "天鳳のウィンドウサイズを修正します。",
+  "version": "1.0.0.0",
+  "manifest_version": 2,
+  "icons": {
+  },
+  "background": {
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://tenhou.net/0/*"
+      ],
+      "js": ["content_scripts.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "http://tenhou.net/*"
+  ]
+}
